@@ -38,11 +38,11 @@ public class Entradas {
             System.out.println("Precio entrada VIP: " + b.calcularPrecio());
             
             System.out.println("\n--- Sobrecarga ---");
-            System.out.print("¿Cuántas entradas generales desea comprar? ");
+            System.out.print("¿Cuántas entradas generales quiere comprar? ");
             int cantidadGeneral = sc.nextInt();
             System.out.println("Total general: " + a.calcularPrecio(cantidadGeneral));
             
-            System.out.print("¿Cuántas entradas VIP desea comprar? ");
+            System.out.print("¿Cuántas entradas VIP quiere comprar? ");
             int cantidadVIP = sc.nextInt();
             System.out.println("Total VIP: " + b.calcularPrecio(cantidadVIP));
         }
