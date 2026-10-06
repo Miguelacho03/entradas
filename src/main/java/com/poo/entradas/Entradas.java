@@ -8,6 +8,7 @@ package com.poo.entradas;
  *
  * @author masdp
  */
+
 import java.util.Scanner;
 
 public class Entradas {
@@ -33,12 +34,17 @@ public class Entradas {
             System.out.println("Evento: " + Entrada.nombreEvento());
             
             System.out.println("\n--- Ligadura dinámica (sobrescritura + polimorfismo) ---");
-            System.out.println("General: " + a.calcularPrecio());
-            System.out.println("VIP: " + b.calcularPrecio());
+            System.out.println("Precio entrada general: " + a.calcularPrecio());
+            System.out.println("Precio entrada VIP: " + b.calcularPrecio());
             
             System.out.println("\n--- Sobrecarga ---");
-            System.out.println("3 entradas generales: " + a.calcularPrecio(3));
-            System.out.println("2 entradas VIP: " + b.calcularPrecio(2));
+            System.out.print("¿Cuántas entradas generales desea comprar? ");
+            int cantidadGeneral = sc.nextInt();
+            System.out.println("Total general: " + a.calcularPrecio(cantidadGeneral));
+            
+            System.out.print("¿Cuántas entradas VIP desea comprar? ");
+            int cantidadVIP = sc.nextInt();
+            System.out.println("Total VIP: " + b.calcularPrecio(cantidadVIP));
         }
     }
 }
